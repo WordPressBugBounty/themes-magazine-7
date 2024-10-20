@@ -1,0 +1,1 @@
+# themes-magazine-7
