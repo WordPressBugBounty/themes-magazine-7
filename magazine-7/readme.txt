@@ -3,7 +3,7 @@
 Contributors: afthemes
 Requires PHP: 5.6
 Tested up to: 6.6
-Stable tag: 2.4.0
+Stable tag: 3.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -37,6 +37,22 @@ Magazine 7 is a clean, elegant and beautiful WordPress theme, which is typically
 Magazine 7 includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 3.0.0 - Oct 25 2024 =
+* New - Import Starter Site Dashboard
+* New - Import Gutenberg Patterns Dashboard
+* New - Import Elementor Kits Dashboard
+* New - Customize Menu
+* New - AF themes Dashboard Menu
+* Update - Scripts improvements
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
+= 2.5.0 - Sep 11 2024 =
+* Update - Theme Banners improvements
+* Update - Theme Menus improvements
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 = 2.4.0 - Aug 14 2024 =
 * Update - Block Style improvement
 * Update - Gaps improvement

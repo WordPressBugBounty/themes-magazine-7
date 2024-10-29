@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/magazine-7/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: Magazine 7 is a clean, elegant and beautiful WordPress theme, which is typically designed for a web blog and magazine with an immense research on modern online news portals. With the help of available customizer options and widgets, you can implement layout as a fashion magazine, restaurant blogging & magazine, e-commerce magazine, personal blog, modern news journals, vibrant news sites and more. The theme is SEO friendly with optimized code and outstanding support. See our demos: https://demos.afthemes.com/magazine-7/, https://demos.afthemes.com/magazine-7/restro/, https://demos.afthemes.com/magazine-7/clean-blog/
-Version: 2.4.0
+Version: 3.0.0
 Requires PHP: 5.6
 Tested up to: 6.6
 License: GNU General Public License v2 or later
@@ -305,6 +305,7 @@ h3,
 h4,
 h5,
 h6,
+.wp-block-search__label,
 .main-navigation a,
 .font-family-1,
 .site-description,
@@ -974,6 +975,7 @@ figure[class*="col-"] {
     content: "\f054";
 }
 
+.main-navigation #primary-menu > ul:not(.menu-mobile) > li > a,
 .main-navigation .menu ul.menu-desktop > li > a {
     display: block;
     padding: 20px 15px;
@@ -1489,6 +1491,13 @@ p.section-subtitle {
     margin-bottom: 0;
 }
 
+.wp-block-latest-comments__comment {
+    line-height: 1.5;
+}
+.wp-block-search__label {
+    font-size: 30px;
+}
+
 .site-content .widget_recent_comments li a,
 .site-content .widget_pages li a,
 .site-content .widget_archive li a,
@@ -1689,10 +1698,28 @@ input[type=search].wp-block-search__input {
     width: 30%;
     border: unset;
     text-transform: uppercase;
+    padding: .375em .625em;
 }
 
 .wp-block-search__button.has-icon {
     width: unset;
+}
+
+body .is-style-fill a.wp-block-button__link:not(.has-text-color){
+    color: #fff;
+    background-color:#ff3c36 ;
+    border: none;
+}
+body .is-style-outline a.wp-block-button__link:not(.has-text-color){
+    border-color:#ff3c36 ;
+    color: #ff3c36;
+}
+body .entry-content > [class*="wp-block-"] .is-style-fill a.wp-block-button__link:not(.has-text-color):hover{
+    color: #fff;
+}
+
+body .entry-content > [class*="wp-block-"] a.wp-block-button__link:hover {
+    text-decoration: none;
 }
 
 .wp-block-search__inside-wrapper {
@@ -2609,6 +2636,18 @@ body.custom-background .site-content .em-breadcrumbs .container {
 
 .banner-trending-posts-wrapper{
     margin: 10px 0;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.af-main-banner.default-section-slider .main-slider{
+    max-height: 466px;
+    overflow: hidden;
+}
+
+.af-main-banner.full-section-slider .main-slider {
+    max-height: 720px;
+    overflow: hidden;
 }
 
 .banner-trending-posts-wrapper h3{
