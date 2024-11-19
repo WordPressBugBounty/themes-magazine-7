@@ -163,8 +163,8 @@ if (!class_exists('AF_themes_info')) {
         'magazine-7', // Parent slug.
         __('Upgrade', 'magazine-7'), // Page title.
         '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'magazine-7') .'</span>', // Menu title.
-        capability: 'manage_options', // Capability.
-        menu_slug: esc_url('https://afthemes.com/products/magazine-7-plus/') // Menu slug.
+        'manage_options', // Capability.
+        esc_url('https://afthemes.com/products/magazine-7-plus/') // Menu slug.
         
       );
     }
