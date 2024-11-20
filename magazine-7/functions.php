@@ -289,8 +289,8 @@ if ( class_exists( 'WooCommerce' ) ) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
 
-add_action( 'after_setup_theme', 'magazine_7_transltion_init');
+add_action( 'init', 'magazine_7_transltion_init');
 
 function magazine_7_transltion_init() {
-    load_theme_textdomain( 'magazine-7', false, get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'magazine-7', get_template_directory()  . '/languages' );
 }
